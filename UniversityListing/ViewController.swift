@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  UniversityListing
 //
-//  Created by Mohammad Aftab Sabir on 06/06/24.
+//  Created by Mohammad Aftab Sabir on 04/06/24.
 //
 
 import UIKit
