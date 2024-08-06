@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,15 +56,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVf-8g-j22">
-                                <rect key="frame" x="292.33333333333331" y="62" width="82.666666666666686" height="35"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <rect key="frame" x="328" y="62" width="47" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="82.670000000000002" id="EV5-z1-pyq"/>
                                     <constraint firstAttribute="height" constant="35" id="OFu-PK-Tt9"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system">
+                                    <color key="baseForegroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="refreshBtnClicked:" destination="dn7-sE-sow" eventType="touchUpInside" id="RhQ-vu-Bjd"/>
                                 </connections>
@@ -89,6 +90,7 @@
                             <constraint firstItem="2NL-ak-Kp9" firstAttribute="trailing" secondItem="Dbg-KO-feB" secondAttribute="trailing" constant="15" id="FPl-9G-cb2"/>
                             <constraint firstItem="I0g-Nl-7Im" firstAttribute="leading" secondItem="2NL-ak-Kp9" secondAttribute="leading" constant="15" id="IeF-cr-Dxg"/>
                             <constraint firstItem="2NL-ak-Kp9" firstAttribute="trailing" secondItem="flW-kq-Bw7" secondAttribute="trailing" constant="15" id="NSS-10-eOG"/>
+                            <constraint firstItem="XVf-8g-j22" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2NL-ak-Kp9" secondAttribute="leading" symbolic="YES" id="ODf-dB-7aa"/>
                             <constraint firstItem="flW-kq-Bw7" firstAttribute="leading" secondItem="I0g-Nl-7Im" secondAttribute="leading" id="Ofk-7o-q98"/>
                             <constraint firstItem="2NL-ak-Kp9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="flW-kq-Bw7" secondAttribute="trailing" symbolic="YES" id="R7b-bb-LhT"/>
                             <constraint firstItem="flW-kq-Bw7" firstAttribute="top" secondItem="UoQ-7O-zZz" secondAttribute="bottom" constant="15" id="Si8-hD-u88"/>
@@ -132,14 +134,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -30,6 +30,7 @@ class UniversityDetailsViewController: UIViewController, UniversityDetailsViewPr
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        refreshBtn.setTitle("", for: .normal)
         presenter.viewDidLoad()
     }
 

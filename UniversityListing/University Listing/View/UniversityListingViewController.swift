@@ -62,6 +62,8 @@ extension UniversityListingViewController: UITableViewDataSource, UITableViewDel
         cell.textLabel?.text = university.name
         
         cell.detailTextLabel?.text = university.state ?? ""
+        // Set selection style to none
+        cell.selectionStyle = .none
         return cell
     }
 
